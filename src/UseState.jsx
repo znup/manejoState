@@ -65,10 +65,10 @@ const UseState = ({ name }) => {
     console.log('Terminando el efecto');
   }, [state.loading]);
 
-  const handleChangeValue = (_) => {
+  const handleChangeValue = (e) => {
     setState({
       ...state,
-      value: _.target.value,
+      value: e.target.value,
     });
   };
   console.log(state.value);
